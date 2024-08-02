@@ -74,7 +74,7 @@
   box-shadow: 4px 4px 4px 4px #a1a1aa;
 
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
@@ -164,6 +164,26 @@
 
 .pseudo {
   font-size: 24px;
+}
+
+.header-buttons {
+  grid-column: 2 / -1;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-buttons button {
+  width: 7.2rem;
+  height: 2.6rem;
+
+  border-radius: 24px;
+  border: none;
+  background-color: #0ea5e9;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 /* MAIN SECTION */
