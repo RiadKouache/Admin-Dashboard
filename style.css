@@ -13,7 +13,7 @@
 
   grid-column: 1 / 2;
   grid-row: 1 / -1;
-  height: 100vh;
+  /* height: 100vh; */
 
   display: grid;
   grid-template-rows: 100px 1fr 1fr;
@@ -253,4 +253,43 @@
 .project-icon {
   width: 30px;
   height: 30px;
+}
+
+/*  */
+
+.annoucements-trending {
+  grid-column: 2/-1;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+}
+
+.annoucements {
+  display: grid;
+  grid-template-rows: 3.2rem 1fr;
+  margin-top: 12px;
+}
+
+.annoucements-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.annoucement {
+  border-bottom: 2px solid #a1a1aa;
+}
+
+.annoucement span {
+  font-weight: 700;
+}
+
+.annoucement p {
+  color: #6d6d74;
+  padding-bottom: 12px;
 }
