@@ -195,6 +195,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
+  padding-bottom: 96px;
 }
 
 .projects {
@@ -261,14 +262,8 @@
   grid-column: 2/-1;
 
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 3.2rem 1fr 1.8rem 1fr;
   gap: 24px;
-}
-
-.annoucements {
-  display: grid;
-  grid-template-rows: 3.2rem 1fr;
-  margin-top: 12px;
 }
 
 .annoucements-container {
@@ -285,6 +280,10 @@
   border-bottom: 2px solid #a1a1aa;
 }
 
+.annoucement:last-child {
+  border-bottom: none;
+}
+
 .annoucement span {
   font-weight: 700;
 }
@@ -292,4 +291,40 @@
 .annoucement p {
   color: #6d6d74;
   padding-bottom: 12px;
+  word-wrap: break-word;
+}
+
+.trendings {
+  display: grid;
+  grid-template-rows: 3.2rem 1fr;
+}
+
+.trending {
+  background-color: #fff;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-left: 24px;
+  padding-top: 24px;
+  gap: 12px;
+}
+
+.trending-container {
+  display: flex;
+  gap: 24px;
+}
+
+.trending img {
+  width: 50px;
+  height: 50px;
+  border-radius: 32px;
+  border: 2px solid black;
+}
+
+.trending-names {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
